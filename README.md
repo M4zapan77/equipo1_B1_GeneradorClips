@@ -90,3 +90,38 @@ Esta estimación cubre únicamente los pesos del modelo. Los fotogramas, las act
 La siguiente captura de la Fase 1 muestra una Tesla T4 con 15,360 MiB de VRAM total en la sesión utilizada entonces:
 
 ![GPU Tesla T4 y memoria total observadas en Colab durante la Fase 1](docs/img/captura-gpu-colab.png)
+
+## Riesgo ético
+
+El riesgo principal es exponer conversaciones, nombres de usuario u otros datos personales presentes en las grabaciones. Se utilizarán videos propios o autorizados, se ocultarán los datos sensibles y las grabaciones quedarán fuera del repositorio público. En la aplicación se deberá limitar la conservación de archivos temporales al tiempo necesario para la búsqueda.
+
+Los resultados también pueden ser poco relevantes o favorecer elementos visuales que CLIP reconoce mejor. Se presentarán como sugerencias para revisión del creador y se comprobarán con ejemplos de Fortnite. La puntuación de similitud servirá para ordenar resultados y no se interpretará como una probabilidad de acierto.
+
+## Cambios respecto a la Fase 1
+
+- **Público delimitado:** la propuesta se concentra en creadores aficionados que editan sus propias grabaciones de Fortnite, en lugar de abarcar jugadores con necesidades diferentes.
+- **Necesidad concreta:** localizar escenas a partir de una descripción para facilitar la preparación de clips.
+- **Alcance inicial acotado:** Fortnite, videos de hasta cinco minutos y consultas visuales en inglés.
+- **Resultado definido:** marcas de tiempo y vistas previas que el creador revisa antes de seleccionar un fragmento.
+- **Separación de la idea de antitrampas:** la detección de cheats mencionada en la Fase 1 queda fuera de esta versión. El sistema se orientará a la búsqueda de escenas para contenido.
+- **Evaluación prevista:** medir la relevancia de los momentos propuestos y el tiempo de localización frente a una revisión manual, sin afirmar resultados que todavía no se han probado.
+
+## Siguientes pasos
+
+- [ ] Reunir grabaciones propias o autorizadas de Fortnite.
+- [ ] Definir un conjunto de consultas visuales y anotar los momentos que corresponden a cada una.
+- [ ] Implementar la carga y validación de videos de hasta cinco minutos.
+- [ ] Extraer fotogramas conservando sus marcas de tiempo.
+- [ ] Integrar CLIP para comparar los fotogramas con las descripciones en inglés.
+- [ ] Mostrar resultados ordenados con sus vistas previas y tiempos.
+- [ ] Evaluar si la escena buscada aparece entre los primeros resultados.
+- [ ] Comparar el tiempo de búsqueda con una revisión manual y medir el uso de memoria.
+- [ ] Aplicar las medidas de privacidad y eliminación de archivos temporales.
+- [ ] Documentar los resultados, las limitaciones y la demostración del proyecto.
+
+## Referencias
+
+- OpenAI. [Model Card de openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32). Arquitectura, tarea, idioma de uso y limitaciones del modelo.
+- OpenAI. [Configuración de CLIP ViT-B/32 en Hugging Face](https://huggingface.co/openai/clip-vit-base-patch32/blob/main/config.json). Configuración de los codificadores de texto e imagen.
+- OpenAI. [Licencia MIT del repositorio oficial de CLIP](https://github.com/openai/CLIP/blob/main/LICENSE).
+- Radford, A. et al. (2021). [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020). Artículo original de CLIP.
