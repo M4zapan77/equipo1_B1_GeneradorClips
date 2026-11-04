@@ -30,3 +30,63 @@ Para preparar clips de Fortnite, un creador debe localizar escenas dentro de sus
 5. Revisa los resultados y decide qué fragmentos utilizar en su edición.
 
 La primera versión se evaluará con un conjunto acotado de búsquedas visuales en Fortnite. El criterio de utilidad será encontrar escenas relacionadas con la consulta y facilitar su localización; la selección final del clip corresponde al creador.
+
+## Modelo
+
+| Dato | Descripción |
+| --- | --- |
+| Identificador | [`openai/clip-vit-base-patch32`](https://huggingface.co/openai/clip-vit-base-patch32) |
+| Tarea en Hugging Face | `zero-shot-image-classification` |
+| Aplicación en ClipQuest | Comparación entre una descripción de texto y los fotogramas extraídos de un video |
+| Número de parámetros | Aproximadamente 151.28 millones |
+| Licencia | MIT, según el [repositorio oficial de CLIP](https://github.com/openai/CLIP/blob/main/LICENSE) |
+| Limitación textual de la Model Card | "CLIP currently struggles with respect to certain tasks such as fine grained classification and counting objects." |
+
+La limitación se encuentra en la sección [Limitations de la Model Card](https://huggingface.co/openai/clip-vit-base-patch32#limitations). CLIP relaciona imágenes y texto; en este proyecto se aplicará a fotogramas individuales. El manejo del video, la conservación de tiempos y la presentación de resultados serán funciones de la aplicación. Las consultas iniciales serán en inglés, conforme al idioma de entrenamiento y evaluación indicado en la Model Card.
+
+Captura de la Model Card consultada durante la Fase 1:
+
+![Model Card de openai/clip-vit-base-patch32 en Hugging Face](docs/img/captura-model-card.png)
+
+## Cómo funciona
+
+```mermaid
+flowchart TD
+    A[/Video de hasta cinco minutos/]
+    B[/Descripción breve en inglés/]
+    C{¿El video es válido?}
+    D[Extraer fotogramas y sus tiempos]
+    E["CLIP: openai/clip-vit-base-patch32"]
+    F[Ordenar fotogramas por similitud]
+    G[/Vistas previas y marcas de tiempo/]
+    H([El creador selecciona las escenas])
+
+    A --> C
+    C -->|No| A
+    C -->|Sí| D
+    D -->|Fotogramas| E
+    B -->|Consulta| E
+    E --> F
+    F --> G
+    G --> H
+```
+
+## Infraestructura
+
+La ejecución inicial se plantea en **Colab con GPU**, siguiendo la viabilidad explorada en la Fase 1. Esto permite experimentar con el modelo y procesar los fotogramas en lotes pequeños sin depender de que todos los integrantes tengan una GPU propia.
+
+Con el valor aproximado de 151.28 millones de parámetros y dos bytes por parámetro en FP16, la memoria de los pesos se estima así:
+
+$$
+\begin{aligned}
+M_{\text{pesos, FP16}} &= 151{,}280{,}000 \times 2\ \text{bytes} \\
+&= 302{,}560{,}000\ \text{bytes} \\
+&\approx 0.303\ \text{GB}
+\end{aligned}
+$$
+
+Esta estimación cubre únicamente los pesos del modelo. Los fotogramas, las activaciones y las librerías requieren memoria adicional. En el Parcial III se medirán el consumo real y el tiempo de procesamiento; la GPU disponible en una sesión de Colab puede variar.
+
+La siguiente captura de la Fase 1 muestra una Tesla T4 con 15,360 MiB de VRAM total en la sesión utilizada entonces:
+
+![GPU Tesla T4 y memoria total observadas en Colab durante la Fase 1](docs/img/captura-gpu-colab.png)
