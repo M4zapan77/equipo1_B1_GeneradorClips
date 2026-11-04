@@ -8,6 +8,8 @@
 
 Localizar escenas dentro de grabaciones es una tarea muy tediosa y en el caso de un gameplay de fortnite esta tarea puede llegar a ser aún más tediosa ya que como mínimo una partida puede durar 20 minutos y en un gameplay juegas más de una partida, esto afecta a los creadores de contenido ya que al momento de subirlo a youtube o alguna otra plataforma será difícil que la gente quiera ver un video tan largo, entonces, al editarlo le tomará mucho tiempo buscar las partes importantes en una grabación de 2 horas o más 
 una prueba de esto son estos dos videos
+
+
 <img width="671" height="229" alt="Captura de pantalla 2026-11-04 171846" src="https://github.com/user-attachments/assets/74116d36-d0b9-4039-a8ca-f21e0ee31691" />
 <img width="940" height="222" alt="Captura de pantalla 2026-11-04 172031" src="https://github.com/user-attachments/assets/a0e63c70-4f89-495d-adee-eaf3f377e920" />
 
