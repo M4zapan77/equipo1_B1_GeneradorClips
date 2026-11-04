@@ -6,12 +6,17 @@
 
 ## El problema
 
-Desarrollar un análisis que explique:
+Localizar escenas dentro de grabaciones es una tarea muy tediosa y en el caso de un gameplay de fortnite esta tarea puede llegar a ser aún más tediosa ya que como mínimo una partida puede durar 20 minutos y en un gameplay juegas más de una partida, esto afecta a los creadores de contenido ya que al momento de subirlo a youtube o alguna otra plataforma será difícil que la gente quiera ver un video tan largo, entonces, al editarlo le tomará mucho tiempo buscar las partes importantes en una grabación de 2 horas o más 
+una prueba de esto son estos dos videos
+<img width="671" height="229" alt="Captura de pantalla 2026-11-04 171846" src="https://github.com/user-attachments/assets/74116d36-d0b9-4039-a8ca-f21e0ee31691" />
+<img width="940" height="222" alt="Captura de pantalla 2026-11-04 172031" src="https://github.com/user-attachments/assets/a0e63c70-4f89-495d-adee-eaf3f377e920" />
 
-- Qué dificultad tiene el creador al localizar escenas dentro de sus grabaciones de Fortnite.
-- A quién afecta y en qué momento de su proceso de edición aparece.
-- Qué consecuencias tiene para su trabajo y qué evidencia permite sostenerlo.
-- Qué tan extendida es la necesidad. Distinguir las cifras generales sobre videojuegos o creación de contenido de los datos que realmente describan el problema de buscar escenas.
+En la primera imagen se muestra un video publicado hace **3 días** de apenas **21:46 minutos** con un total de **1.3 millones de visitas**
+mientras que en la segunda un video publicado hace **7 años**, mucho más tiempo que el primero tiene una duración de **1:46:59 horas** y un total de **1.5 millones de vistas**.
+
+una diferencia pequeña tomando en cuenta la diferencia de antigüedad de ambos videos
+
+
 
 Incluir **al menos dos datos verificables**, con su fecha, ámbito y enlace a la fuente. Integrarlos también en el texto y explicar qué aportan al análisis.
 
