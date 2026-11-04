@@ -25,7 +25,8 @@ Incluir **al menos dos datos verificables**, con su fecha, ámbito y enlace a la
 | Dato o indicador | Cifra y periodo | Población o ámbito | Relación con el problema | Fuente con enlace |
 | --- | --- | --- | --- | --- |
 |Tasa de retención promedio para videos de larga duración (más de 10-20 minutos). | Entre 30% y 45% de retención promedio (datos del sector de analítica de video y reportes de la plataforma al cierre de 2025/2026). |Creadores de contenido de formato largo y usuarios de YouTube a nivel global. | Demuestra que la gran mayoría de la audiencia abandona los videos largos antes de la mitad, lo que valida la dificultad de retener usuarios en gameplays extensos sin una buena estructuración o cortes clave. | Estudio de Retención de Audiencia en YouTube - LeNosTube / Informes de Métricas 2026. |
-| | | | | |
+| Volumen total de horas visualizadas en plataformas de contenido de videojuegos | **8.8 mil millones** de horas acumuladas durante el año. | Comunidad global de usuarios y creadores de contenido de videojuegos en YouTube. | Refleja la enorme saturación y competencia masiva que existe en la plataforma, donde los creadores necesitan destacar rápidamente y retener a la audiencia para no perder tracción frente a miles de millones de horas de contenido disponible. | Reporte anual de métricas de YouTube Gaming - Tubefilter / Stream Hatchet. |
+
 
 ## Cómo se resuelve hoy
 
