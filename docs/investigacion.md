@@ -49,7 +49,7 @@ El modelo elegido es [`openai/clip-vit-base-patch32`](https://huggingface.co/ope
 | Modelo y enlace | Parámetros | Licencia y fuente | Ventajas para ClipQuest | Desventajas o límites |
 | --- | --- | --- | --- | --- |
 | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) | Aproximadamente 151.28 millones | [MIT](https://github.com/openai/CLIP/blob/main/LICENSE) | Permite relacionar imágenes y descripciones de texto | Su rendimiento en Fortnite debe probarse; la Model Card describe dificultades con categorías muy específicas y conteo de objetos |
-| | | | | |
+|[google/siglip-base-patch16-224](https://huggingface.co/google/siglip-base-patch16-224) | Alrededor de 86 millones | Apache 2.0 | Utiliza una función de pérdida basada en Sigmoid en lugar de Softmax, lo que le permite escalar de manera más eficiente en tareas de recuperación imagen-texto de cero disparo (zero-shot). | Es rápido pero requiere ajustar o alinear los prompts descriptivos al contexto visual específico de los videojuegos (como las mecánicas particulares de Fortnite) para maximizar su precisión al buscar escenas exactas. |
 
 Precisar qué parte hará el modelo y qué parte hará la aplicación: extracción de fotogramas, conservación de tiempos, ordenamiento y presentación de resultados. Consultar la Model Card y la documentación del modelo alternativo; citar las fuentes de la comparación en el texto.
 
