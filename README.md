@@ -116,7 +116,7 @@ Los resultados también pueden ser poco relevantes o favorecer elementos visuale
 - [ ] Extraer fotogramas conservando sus marcas de tiempo.
 - [ ] Integrar CLIP para comparar los fotogramas con las descripciones en inglés.
 - [ ] Mostrar resultados ordenados con sus vistas previas y tiempos.
-- [ ] Evaluar si la escena buscada aparece entre los primeros resultados.
+- [ ] Evaluar 20 búsquedas con escenas de referencia y comprobar la meta propuesta de al menos 14 aciertos entre los primeros cinco resultados.
 - [ ] Comparar el tiempo de búsqueda con una revisión manual y medir el uso de memoria.
 - [ ] Aplicar las medidas de privacidad y eliminación de archivos temporales.
 - [ ] Documentar los resultados, las limitaciones y la demostración del proyecto.
