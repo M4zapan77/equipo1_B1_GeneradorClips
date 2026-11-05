@@ -86,10 +86,12 @@ No se afirmará una huella de carbono sin información sobre energía y factores
 
 ## Referencias
 
-Reunir **al menos cinco fuentes confiables**, con enlace, y citarlas en los apartados donde se utilicen. Agregar las fuentes de los datos del problema, las alternativas existentes y el modelo de comparación. Las siguientes fuentes técnicas ya corresponden al modelo elegido:
+1. Stream Hatchet. *YouTube Gaming 2025 Live Streaming Trends Report*. [Informe y resumen oficial](https://hatchet.gg/resources/guides/2025-youtube-gaming-live-streaming-trends/).
+2. Radford, A. et al. (2021). *Learning Transferable Visual Models From Natural Language Supervision*. [Artículo original de CLIP](https://arxiv.org/abs/2103.00020).
+3. OpenAI. *Model Card de openai/clip-vit-base-patch32*. [Ficha del modelo](https://huggingface.co/openai/clip-vit-base-patch32).
+4. OpenAI. *Licencia de CLIP*. [Licencia MIT](https://github.com/openai/CLIP/blob/main/LICENSE).
+5. Google / Hugging Face. *google/siglip-base-patch16-224*. [Ficha, licencia y tamaño del modelo](https://huggingface.co/google/siglip-base-patch16-224).
+6. Zhai, X., Mustafa, B., Kolesnikov, A. y Beyer, L. (2023). *Sigmoid Loss for Language Image Pre-Training*. [Artículo original de SigLIP](https://arxiv.org/abs/2303.15343).
+7. Google. *Colaboratory: Frequently Asked Questions*. [Disponibilidad y límites de recursos](https://research.google.com/colaboratory/faq.html).
 
-1. OpenAI. [Model Card de openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32).
-2. Radford, A. et al. (2021). [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020).
-3. OpenAI. [Licencia MIT del repositorio oficial de CLIP](https://github.com/openai/CLIP/blob/main/LICENSE).
-
-Antes de la entrega, comprobar que cada cifra y comparación tenga una fuente, que las citas del texto correspondan a esta lista y que todos los enlaces funcionen. Esta base todavía no constituye la investigación terminada.
+Fuentes consultadas el 4 de noviembre de 2026. Las figuras 1 y 2 son ejemplos ilustrativos aportados por el equipo; no se utilizan como evidencia estadística.
