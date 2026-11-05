@@ -42,10 +42,6 @@ Después de la tabla, explicar qué necesidad sigue sin cubrirse y qué aportaci
 
 ## Por qué con IA y por qué este modelo
 
-Explicar cómo la comparación de texto e imagen podría ayudar a localizar escenas y qué ventajas se esperan frente a recorrer manualmente el video. Presentar esas ventajas como hipótesis mientras no existan pruebas del prototipo.
-
-El modelo elegido es [`openai/clip-vit-base-patch32`](https://huggingface.co/openai/clip-vit-base-patch32). Compararlo con **al menos otro modelo de Hugging Face**. Completar y justificar la elección a partir de sus parámetros, licencia, ventajas y desventajas.
-
 | Modelo y enlace | Parámetros | Licencia y fuente | Ventajas para ClipQuest | Desventajas o límites |
 | --- | --- | --- | --- | --- |
 | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) | Aproximadamente 151.28 millones | [MIT](https://github.com/openai/CLIP/blob/main/LICENSE) | Permite relacionar imágenes y descripciones de texto | Su rendimiento en Fortnite debe probarse; la Model Card describe dificultades con categorías muy específicas y conteo de objetos |
