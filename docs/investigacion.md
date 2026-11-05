@@ -114,5 +114,8 @@ No se afirmará una huella de carbono sin información sobre energía y factores
 5. Google / Hugging Face. *google/siglip-base-patch16-224*. [Ficha, licencia y tamaño del modelo](https://huggingface.co/google/siglip-base-patch16-224).
 6. Zhai, X., Mustafa, B., Kolesnikov, A. y Beyer, L. (2023). *Sigmoid Loss for Language Image Pre-Training*. [Artículo original de SigLIP](https://arxiv.org/abs/2303.15343).
 7. Google. *Colaboratory: Frequently Asked Questions*. [Disponibilidad y límites de recursos](https://research.google.com/colaboratory/faq.html).
+8. Google. *Capítulos en vídeos*. [Ayuda de YouTube](https://support.google.com/youtube/answer/9884579?hl=es).
+9. Google. *Ver transcripciones de vídeos*. [Ayuda de YouTube](https://support.google.com/youtube/answer/15930243?hl=es).
+10. Medal. *Automatic Event Detection / Auto Clipping*. [Documentación oficial](https://support.medal.tv/support/solutions/articles/48001167701).
 
 Fuentes consultadas el 4 de noviembre de 2026. Las figuras 1 y 2 son ejemplos ilustrativos aportados por el equipo; no se utilizan como evidencia estadística.
