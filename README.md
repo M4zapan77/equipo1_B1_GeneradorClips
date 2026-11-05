@@ -31,6 +31,8 @@ Para preparar clips de Fortnite, un creador debe localizar escenas dentro de sus
 
 La primera versión se evaluará con un conjunto acotado de búsquedas visuales en Fortnite. El criterio de utilidad será encontrar escenas relacionadas con la consulta y facilitar su localización; la selección final del clip corresponde al creador.
 
+Aunque la necesidad puede surgir en grabaciones largas, el prototipo recibirá fragmentos de hasta cinco minutos preparados previamente por el usuario. Se medirá la búsqueda dentro de cada fragmento y se registrará aparte el tiempo de preparación. La propuesta de evaluación consiste en realizar 20 consultas con escenas de referencia y recuperar una escena válida entre los primeros cinco resultados en al menos 14 casos (70 %); todavía no se han obtenido esas mediciones.
+
 ## Modelo
 
 | Dato | Descripción |
