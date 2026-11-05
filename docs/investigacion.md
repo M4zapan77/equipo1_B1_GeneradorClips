@@ -27,16 +27,6 @@ Incluir **al menos dos datos verificables**, con su fecha, ámbito y enlace a la
 |Tasa de retención promedio para videos de larga duración (más de 10-20 minutos). | Entre 30% y 45% de retención promedio (datos del sector de analítica de video y reportes de la plataforma al cierre de 2025/2026). |Creadores de contenido de formato largo y usuarios de YouTube a nivel global. | Demuestra que la gran mayoría de la audiencia abandona los videos largos antes de la mitad, lo que valida la dificultad de retener usuarios en gameplays extensos sin una buena estructuración o cortes clave. | [Estudio de Retención de Audiencia en YouTube - LeNosTube / Informes de Métricas 2026](https://www.lenostube.com/en/youtube-audience-retention-average-good-and-best-benchmarks/). |
 | Volumen total de horas visualizadas en plataformas de contenido de videojuegos | **8.8 mil millones** de horas acumuladas durante el año. | Comunidad global de usuarios y creadores de contenido de videojuegos en YouTube. | Refleja la enorme saturación y competencia masiva que existe en la plataforma, donde los creadores necesitan destacar rápidamente y retener a la audiencia para no perder tracción frente a miles de millones de horas de contenido disponible. | [Reporte anual de métricas de YouTube Gaming - Tubefilter / Stream Hatchet](https://www.tubefilter.com/2026/03/05/youtube-gaming-hit-8-8-billion-hours-of-watchtime-in-2025/). |
 
-
-## Cómo se resuelve hoy
-
-Alternativas reales utilizadas actualmente
-
-| Solución o alternativa | Qué ofrece | Limitaciones para este caso de uso |
-| --- | --- | --- | --- |
-| Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso |
-| Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego |
-| Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |
 # Cómo se resuelve hoy
 
 Existen procesos manuales y herramientas que ayudan a navegar o seleccionar contenido. La comparación distingue la función documentada de cada alternativa de su posible utilidad para ClipQuest. No pretende afirmar que todos los productos carezcan de otras funciones.
@@ -47,52 +37,6 @@ Existen procesos manuales y herramientas que ayudan a navegar o seleccionar cont
 | Capítulos de YouTube | Secciones con títulos, tiempos y vistas previas; pueden ser manuales o automáticas. | Ayudan a navegar un video publicado, pero dividirlo en capítulos no equivale a buscar cualquier descripción visual. Los capítulos automáticos no están disponibles en todos los videos. | Ayuda de YouTube \[2\]. |
 | Transcripciones de YouTube | Permiten localizar partes de un video con subtítulos y saltar desde el texto a su momento correspondiente. | Su utilidad depende de que el contenido buscado esté representado en la transcripción; una escena visual silenciosa puede no estar descrita. | Ayuda de YouTube \[3\]. |
 | Detección automática de eventos de Medal | Genera clips o marcadores de eventos durante la grabación en juegos compatibles, entre ellos Fortnite. | El flujo documentado se centra en eventos detectados al grabar. Su utilidad debe distinguirse de una consulta visual posterior sobre un archivo elegido por el creador. | Soporte de Medal \[4\]. |
-Existen procesos manuales y herramientas que ayudan a navegar o seleccionar contenido. La comparación distingue la función documentada de cada alternativa de su posible utilidad para ClipQuest. No pretende afirmar que todos los productos carezcan de otras funciones.
-
-Alternativa
-
-Qué ofrece
-
-Límite o diferencia para este caso de uso
-
-Fuente
-
-Revisión manual de la grabación
-
-El creador reproduce y recorre el video hasta identificar el momento que recuerda.
-
-La búsqueda depende de su memoria y de la revisión visual; será la referencia para comparar tiempos.
-
-Proceso de referencia definido por el equipo.
-
-Capítulos de YouTube
-
-Secciones con títulos, tiempos y vistas previas; pueden ser manuales o automáticas.
-
-Ayudan a navegar un video publicado, pero dividirlo en capítulos no equivale a buscar cualquier descripción visual. Los capítulos automáticos no están disponibles en todos los videos.
-
-Ayuda de YouTube [2].
-
-Transcripciones de YouTube
-
-Permiten localizar partes de un video con subtítulos y saltar desde el texto a su momento correspondiente.
-
-Su utilidad depende de que el contenido buscado esté representado en la transcripción; una escena visual silenciosa puede no estar descrita.
-
-Ayuda de YouTube [3].
-
-Detección automática de eventos de Medal
-
-Genera clips o marcadores de eventos durante la grabación en juegos compatibles, entre ellos Fortnite.
-
-El flujo documentado se centra en eventos detectados al grabar. Su utilidad debe distinguirse de una consulta visual posterior sobre un archivo elegido por el creador.
-
-Soporte de Medal [4].
-
-
-Los capítulos, la transcripción y la captura por eventos cubren necesidades diferentes. ClipQuest evaluará una búsqueda posterior guiada por texto y mantendrá la edición final en manos del usuario.
-
-La comparación con la revisión manual será necesaria para saber si aporta utilidad, especialmente porque localizar una escena sencilla podría resultar rápido sin IA.
 
 
 ## Por qué con IA y por qué este modelo
