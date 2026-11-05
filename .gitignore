@@ -1,0 +1,28 @@
+# Grabaciones originales y repeticiones
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.replay
+grabaciones/
+datos-privados/
+
+# Archivos temporales y entornos locales
+tmp/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.cache/
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+!.env.example
+
+# Pesos descargados de modelos
+*.safetensors
+*.pt
+*.pth
+*.bin
