@@ -31,6 +31,70 @@ Aunque el problema incluye grabaciones largas, la primera versión procesará **
 
 ## Cómo se resuelve hoy
 
+Alternativas reales utilizadas actualmente
+
+| Solución o alternativa | Qué ofrece | Limitaciones para este caso de uso |
+| --- | --- | --- | --- |
+| Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso |
+| Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego |
+| Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |
+# Cómo se resuelve hoy
+
+Existen procesos manuales y herramientas que ayudan a navegar o seleccionar contenido. La comparación distingue la función documentada de cada alternativa de su posible utilidad para ClipQuest. No pretende afirmar que todos los productos carezcan de otras funciones.
+
+| Alternativa | Qué ofrece | Límite o diferencia para este caso de uso | Fuente |
+| --- | --- | --- | --- |
+| Revisión manual de la grabación | El creador reproduce y recorre el video hasta identificar el momento que recuerda. | La búsqueda depende de su memoria y de la revisión visual; será la referencia para comparar tiempos. | Proceso de referencia definido por el equipo. |
+| Capítulos de YouTube | Secciones con títulos, tiempos y vistas previas; pueden ser manuales o automáticas. | Ayudan a navegar un video publicado, pero dividirlo en capítulos no equivale a buscar cualquier descripción visual. Los capítulos automáticos no están disponibles en todos los videos. | Ayuda de YouTube \[2\]. |
+| Transcripciones de YouTube | Permiten localizar partes de un video con subtítulos y saltar desde el texto a su momento correspondiente. | Su utilidad depende de que el contenido buscado esté representado en la transcripción; una escena visual silenciosa puede no estar descrita. | Ayuda de YouTube \[3\]. |
+| Detección automática de eventos de Medal | Genera clips o marcadores de eventos durante la grabación en juegos compatibles, entre ellos Fortnite. | El flujo documentado se centra en eventos detectados al grabar. Su utilidad debe distinguirse de una consulta visual posterior sobre un archivo elegido por el creador. | Soporte de Medal \[4\]. |
+Existen procesos manuales y herramientas que ayudan a navegar o seleccionar contenido. La comparación distingue la función documentada de cada alternativa de su posible utilidad para ClipQuest. No pretende afirmar que todos los productos carezcan de otras funciones.
+
+Alternativa
+
+Qué ofrece
+
+Límite o diferencia para este caso de uso
+
+Fuente
+
+Revisión manual de la grabación
+
+El creador reproduce y recorre el video hasta identificar el momento que recuerda.
+
+La búsqueda depende de su memoria y de la revisión visual; será la referencia para comparar tiempos.
+
+Proceso de referencia definido por el equipo.
+
+Capítulos de YouTube
+
+Secciones con títulos, tiempos y vistas previas; pueden ser manuales o automáticas.
+
+Ayudan a navegar un video publicado, pero dividirlo en capítulos no equivale a buscar cualquier descripción visual. Los capítulos automáticos no están disponibles en todos los videos.
+
+Ayuda de YouTube [2].
+
+Transcripciones de YouTube
+
+Permiten localizar partes de un video con subtítulos y saltar desde el texto a su momento correspondiente.
+
+Su utilidad depende de que el contenido buscado esté representado en la transcripción; una escena visual silenciosa puede no estar descrita.
+
+Ayuda de YouTube [3].
+
+Detección automática de eventos de Medal
+
+Genera clips o marcadores de eventos durante la grabación en juegos compatibles, entre ellos Fortnite.
+
+El flujo documentado se centra en eventos detectados al grabar. Su utilidad debe distinguirse de una consulta visual posterior sobre un archivo elegido por el creador.
+
+Soporte de Medal [4].
+
+
+Los capítulos, la transcripción y la captura por eventos cubren necesidades diferentes. ClipQuest evaluará una búsqueda posterior guiada por texto y mantendrá la edición final en manos del usuario.
+
+La comparación con la revisión manual será necesaria para saber si aporta utilidad, especialmente porque localizar una escena sencilla podría resultar rápido sin IA.
+
 ## Por qué con IA y por qué este modelo
 
 Una búsqueda basada únicamente en palabras del audio no recupera necesariamente lo que aparece en pantalla. La propuesta utiliza un modelo que relaciona imágenes y texto para comparar descripciones con fotogramas. El trabajo original de CLIP estudia esa asociación y su transferencia a distintas tareas visuales [2]. Esto justifica explorar su uso, pero no garantiza precisión en Fortnite.
