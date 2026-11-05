@@ -33,23 +33,18 @@ Aunque el problema incluye grabaciones largas, la primera versión procesará **
 
 ## Por qué con IA y por qué este modelo
 
-Las alternativas actuales buscan por tiempo, por metadatos o por audio, pero ninguna entiende lo que se ve en pantalla. Un modelo como CLIP relaciona texto con imágenes, así que puede encontrar un fotograma a partir de una descripción, aunque el creador no estuviera hablando en ese momento.
-| Modelo y enlace | Parámetros | Licencia y fuente | Ventajas para ClipQuest | Desventajas o límites |
+Una búsqueda basada únicamente en palabras del audio no recupera necesariamente lo que aparece en pantalla. La propuesta utiliza un modelo que relaciona imágenes y texto para comparar descripciones con fotogramas. El trabajo original de CLIP estudia esa asociación y su transferencia a distintas tareas visuales [2]. Esto justifica explorar su uso, pero no garantiza precisión en Fortnite.
+
+Se conserva `openai/clip-vit-base-patch32`, elegido en la Fase 1. La Model Card describe sus codificadores de imagen y texto y advierte dificultades con categorías muy específicas y conteo de objetos [3]. Por ello, las primeras consultas se formularán en inglés y describirán elementos visibles; las búsquedas ambiguas y las acciones que requieren contexto temporal se tratarán como posibles limitaciones.
+
+| Modelo | Parámetros aproximados | Licencia | Ventajas para el prototipo | Desventajas o aspectos por comprobar |
 | --- | --- | --- | --- | --- |
-| [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) | Aproximadamente 151.28 millones | [MIT](https://github.com/openai/CLIP/blob/main/LICENSE) | Permite relacionar imágenes y descripciones de texto | Su rendimiento en Fortnite debe probarse; la Model Card describe dificultades con categorías muy específicas y conteo de objetos |
-|[google/siglip-base-patch16-224](https://huggingface.co/google/siglip-base-patch16-224) | Alrededor de 86 millones | Apache 2.0 | Utiliza una función de pérdida basada en Sigmoid en lugar de Softmax, lo que le permite escalar de manera más eficiente en tareas de recuperación imagen-texto de cero disparo (zero-shot). | Es rápido pero requiere ajustar o alinear los prompts descriptivos al contexto visual específico de los videojuegos (como las mecánicas particulares de Fortnite) para maximizar su precisión al buscar escenas exactas. |
+| [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) | 151.28 millones | [MIT](https://github.com/openai/CLIP/blob/main/LICENSE) [4] | Continúa el trabajo de la Fase 1 y permite comparar imagen y texto; su cantidad de parámetros es menor que la de la alternativa indicada | Su desempeño con escenas y objetos de Fortnite no se ha medido; puede confundir detalles visuales o consultas poco precisas |
+| [SigLIP base-patch16-224](https://huggingface.co/google/siglip-base-patch16-224) | La ficha indica 0.2B, aproximadamente 200 millones para el modelo completo | Apache 2.0, indicada en su ficha [5] | También permite recuperación imagen-texto; ofrece una alternativa para comparar los mismos casos | Tiene más parámetros que el CLIP elegido y aún no se dispone de mediciones locales de precisión, memoria o tiempo |
 
+SigLIP introduce una función de pérdida sigmoide para el entrenamiento de pares imagen-texto [6]. Esa diferencia no demuestra por sí misma que sea más rápido o más preciso en este proyecto. La elección inicial de CLIP se justifica por continuidad, documentación disponible y una estimación menor de memoria de pesos; no supone una superioridad ya comprobada frente a SigLIP.
 
-¿Qué hace el modelo?
-- Toma las descripciones textuales ingresadas por el usuario y fotogramas extraidos
-- Evalúa la cercanía matemática entre el texto de búsqueda y la imagen
-  
-
-¿Qué hace la App?
-- Extraccion de fotogramas
-- Registrar y almacenar tiempos
-- Tomar resultados del modelo y ordenarlos
-- Presentar resultados
+El modelo calculará la afinidad entre cada fotograma y la consulta. La aplicación se encargará de validar el video, extraer fotogramas, conservar sus tiempos, ordenar los resultados y mostrar vistas previas. Una puntuación alta servirá para ordenar candidatos; no se presentará como una probabilidad calibrada de que la escena sea correcta.
 
 ## Usuarios y requisitos
 
