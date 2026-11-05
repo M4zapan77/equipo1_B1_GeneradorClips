@@ -32,13 +32,13 @@ Incluir **al menos dos datos verificables**, con su fecha, ámbito y enlace a la
 
 Alternativas reales utilizadas actualmente
 
-| Solución o alternativa | Qué ofrece | Limitaciones para este caso de uso | Fuente con enlace |
+| Solución o alternativa | Qué ofrece | Limitaciones para este caso de uso |
 | --- | --- | --- | --- |
-| Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso | |
-| Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego | |
-| Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |  |
+| Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso |
+| Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego |
+| Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |
 
-Después de la tabla, explicar qué necesidad sigue sin cubrirse y qué aportación concreta se propone evaluar con ClipQuest. Evitar atribuir funciones o carencias a una herramienta sin comprobarlas en una fuente.
+
 
 ## Por qué con IA y por qué este modelo
 
