@@ -1,32 +1,33 @@
 # Investigación de la problemática de ClipQuest
 
-> **Base de trabajo en elaboración.** César, Ernesto y Sebastián desarrollarán principalmente este documento, con apoyo de Diego. Antes de entregar, sustituyan las indicaciones de esta base por su investigación y completen las tablas. La extensión sugerida es de 1,500 a 2,500 palabras.
-
-**Alcance acordado:** creadores aficionados que editan sus propias grabaciones de Fortnite. La primera versión buscará escenas a partir de una descripción breve en inglés, dentro de videos de hasta cinco minutos, y devolverá marcas de tiempo y vistas previas para revisión del creador.
+ClipQuest propone facilitar la búsqueda de escenas en grabaciones de Fortnite para creadores aficionados que editan sus propios videos. El avance de la Fase 2 documenta el problema, las alternativas disponibles y el diseño de un prototipo académico. Sus beneficios y metas se comprobarán durante el desarrollo del Parcial III; todavía no se presentan resultados de funcionamiento.
 
 ## El problema
 
-Localizar escenas dentro de grabaciones es una tarea muy tediosa y en el caso de un gameplay de fortnite esta tarea puede llegar a ser aún más tediosa ya que como mínimo una partida puede durar 20 minutos y en un gameplay juegas más de una partida, esto afecta a los creadores de contenido ya que al momento de subirlo a youtube o alguna otra plataforma será difícil que la gente quiera ver un video tan largo, entonces, al editarlo le tomará mucho tiempo buscar las partes importantes en una grabación de 2 horas o más 
-una prueba de esto son estos dos videos
+Un creador que conserva grabaciones de sus partidas necesita seleccionar fragmentos para preparar contenido. Puede recordar un objeto, una situación o un elemento del escenario sin recordar su ubicación en el video. Encontrarlo exige revisar la grabación, desplazarse por la línea de tiempo y comprobar que la escena corresponde a lo que busca. El problema que aborda ClipQuest es esa localización previa a la edición.
 
+La necesidad puede aparecer en sesiones extensas que contienen varias partidas. Sin embargo, no se supone una duración mínima universal de una partida ni se afirma que un video corto consiga más visitas por su duración. La propuesta se concentra en ayudar al creador a recuperar momentos que él considera útiles, conservando su criterio editorial.
 
-<img width="671" height="229" alt="Captura de pantalla 2026-11-04 171846" src="https://github.com/user-attachments/assets/74116d36-d0b9-4039-a8ca-f21e0ee31691" />
-<img width="940" height="222" alt="Captura de pantalla 2026-11-04 172031" src="https://github.com/user-attachments/assets/a0e63c70-4f89-495d-adee-eaf3f377e920" />
+Como contexto, el informe de YouTube Gaming de Stream Hatchet registra 8.8 mil millones de horas vistas durante 2025 y alrededor de seis millones de publicaciones de Shorts relacionadas con videojuegos en agosto de ese año [1]. Son indicadores de consumo de transmisiones y producción de contenido breve; no miden el tiempo de edición de un creador de Fortnite.
 
-En la primera imagen se muestra un video publicado hace **3 días** de apenas **21:46 minutos** con un total de **1.3 millones de visitas**
-mientras que en la segunda un video publicado hace **7 años**, mucho más tiempo que el primero tiene una duración de **1:46:59 horas** y un total de **1.5 millones de vistas**.
-
-una diferencia pequeña tomando en cuenta la diferencia de antigüedad de ambos videos
-
-
-
-Incluir **al menos dos datos verificables**, con su fecha, ámbito y enlace a la fuente. Integrarlos también en el texto y explicar qué aportan al análisis.
-
-| Dato o indicador | Cifra y periodo | Población o ámbito | Relación con el problema | Fuente con enlace |
+| Indicador | Cifra y periodo | Ámbito | Relación con el proyecto | Fuente |
 | --- | --- | --- | --- | --- |
-|Tasa de retención promedio para videos de larga duración (más de 10-20 minutos). | Entre 30% y 45% de retención promedio (datos del sector de analítica de video y reportes de la plataforma al cierre de 2025/2026). |Creadores de contenido de formato largo y usuarios de YouTube a nivel global. | Demuestra que la gran mayoría de la audiencia abandona los videos largos antes de la mitad, lo que valida la dificultad de retener usuarios en gameplays extensos sin una buena estructuración o cortes clave. | [Estudio de Retención de Audiencia en YouTube - LeNosTube / Informes de Métricas 2026](https://www.lenostube.com/en/youtube-audience-retention-average-good-and-best-benchmarks/). |
-| Volumen total de horas visualizadas en plataformas de contenido de videojuegos | **8.8 mil millones** de horas acumuladas durante el año. | Comunidad global de usuarios y creadores de contenido de videojuegos en YouTube. | Refleja la enorme saturación y competencia masiva que existe en la plataforma, donde los creadores necesitan destacar rápidamente y retener a la audiencia para no perder tracción frente a miles de millones de horas de contenido disponible. | [Reporte anual de métricas de YouTube Gaming - Tubefilter / Stream Hatchet](https://www.tubefilter.com/2026/03/05/youtube-gaming-hit-8-8-billion-hours-of-watchtime-in-2025/). |
+| Horas vistas en YouTube Gaming | 8.8 mil millones, durante 2025 | Transmisiones de videojuegos en YouTube Gaming | Describe el contexto de consumo de grabaciones y transmisiones; no demuestra por sí solo una necesidad de edición | [Stream Hatchet, informe 2025](https://hatchet.gg/resources/guides/2025-youtube-gaming-live-streaming-trends/) |
+| Publicaciones de gaming en YouTube Shorts | Aproximadamente seis millones, en agosto de 2025 | Publicaciones cortas relacionadas con videojuegos | Contextualiza la producción de contenido breve al que puede destinarse una selección de escenas | [Stream Hatchet, informe 2025](https://hatchet.gg/resources/guides/2025-youtube-gaming-live-streaming-trends/) |
 
+Para estudiar la necesidad concreta, el equipo comparará la búsqueda manual y la asistida sobre los mismos fragmentos. Se registrará si aparece el momento buscado y cuánto tarda la persona en localizarlo. Esto permitirá evaluar una hipótesis de utilidad sin atribuir al prototipo un ahorro todavía no medido.
+
+Las siguientes capturas del canal TheGrefg, seleccionadas en la documentación del equipo, ilustran publicaciones de distinta duración. No constituyen una muestra representativa ni permiten atribuir diferencias de visitas a la duración.
+
+![Ejemplo ilustrativo de una publicación de Fortnite con duración visible de 21 minutos y 46 segundos](img/ejemplo-video-corto.png)
+
+Figura 1. Publicación con duración visible de 21:46. [Captura aportada por el equipo](https://github.com/user-attachments/assets/74116d36-d0b9-4039-a8ca-f21e0ee31691).
+
+![Ejemplo ilustrativo de una transmisión de Fortnite con duración visible de una hora, 46 minutos y 59 segundos](img/ejemplo-video-largo.png)
+
+Figura 2. Publicación con duración visible de 1:46:59. [Captura aportada por el equipo](https://github.com/user-attachments/assets/a0e63c70-4f89-495d-adee-eaf3f377e920).
+
+Aunque el problema incluye grabaciones largas, la primera versión procesará **fragmentos de hasta cinco minutos**. El creador proporcionará previamente un fragmento de su grabación. La evaluación medirá la búsqueda dentro de ese fragmento e informará por separado cualquier tiempo de preparación. Este alcance permite probar la idea antes de plantear sesiones completas.
 
 ## Cómo se resuelve hoy
 
@@ -37,8 +38,6 @@ Alternativas reales utilizadas actualmente
 | Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso |
 | Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego |
 | Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |
-
-
 
 ## Por qué con IA y por qué este modelo
 
@@ -59,7 +58,6 @@ Las alternativas actuales buscan por tiempo, por metadatos o por audio, pero nin
 - Registrar y almacenar tiempos
 - Tomar resultados del modelo y ordenarlos
 - Presentar resultados
-
 
 ## Usuarios y requisitos
 
