@@ -48,25 +48,22 @@ El modelo calculará la afinidad entre cada fotograma y la consulta. La aplicaci
 
 ## Usuarios y requisitos
 
-Describir al usuario principal a partir del alcance acordado: una persona que graba sus partidas de Fortnite, edita su contenido y necesita localizar escenas para preparar clips. Explicar qué sabe hacer, qué información recuerda de la escena y qué espera recibir del sistema.
+El usuario principal es un creador aficionado que graba Fortnite, maneja archivos de video y realiza su propia edición. No necesita conocimientos de programación. Puede recordar características visibles de una escena y aceptar revisar varios candidatos antes de elegir un fragmento. La propuesta no incluye detección de trampas ni decisiones sobre la conducta de otros jugadores.
 
-Requisitos ya acordados que deben desarrollar y justificar:
+La interfaz y el flujo de trabajo deberán comunicar el límite de cinco minutos y el uso inicial de consultas en inglés. También deberán distinguir las sugerencias del sistema de la decisión de publicación del creador. Los siguientes requisitos y criterios describen lo que se comprobará en el Parcial III.
 
-- Recibir una grabación propia o autorizada de Fortnite de hasta cinco minutos.
-- Aceptar una descripción breve en inglés sobre contenido visible en la escena.
-- Comparar la consulta con fotogramas del video y conservar sus marcas de tiempo.
-- Mostrar momentos ordenados por similitud, acompañados de una vista previa y su tiempo.
-- Permitir que el creador revise los resultados y seleccione las escenas que le sirven.
-- Proteger las grabaciones y evitar la publicación de datos personales.
-
-Completar los criterios de aceptación. Las metas de precisión, tiempo y cantidad de resultados deberán acordarse con el equipo y comprobarse con pruebas.
-
-| Requisito | Cómo se comprobará | Criterio de aceptación acordado |
+| Requisito | Cómo se comprobará | Criterio de aceptación propuesto |
 | --- | --- | --- |
-| Búsqueda de una escena relacionada con la consulta | | |
-| Presentación de vistas previas y marcas de tiempo | | |
-| Utilidad frente a una revisión manual | | |
-| Manejo de grabaciones y archivos temporales | | |
+| Recibir un video legible de hasta cinco minutos | Probar archivos válidos, dañados y de duración superior al límite | Aceptar archivos legibles dentro del límite e informar claramente los casos rechazados |
+| Recibir una consulta breve en inglés | Probar consultas preparadas y entradas vacías | Solicitar una descripción no vacía y evitar la búsqueda cuando no hay consulta |
+| Mostrar candidatos localizables | Revisar las salidas de las búsquedas de prueba | Presentar hasta cinco resultados con una vista previa y un tiempo que permita verificar el momento |
+| Recuperar escenas relacionadas | Realizar 20 consultas con escenas de referencia anotadas previamente | Encontrar una escena válida entre los primeros cinco resultados en al menos 14 consultas, equivalente al 70 % |
+| Medir la utilidad frente al proceso manual | Comparar las mismas consultas y fragmentos en ambas condiciones | Registrar tiempos y aciertos de ambos métodos, incluidos los casos donde la búsqueda manual resulte mejor |
+| Proteger los archivos de entrada | Revisar la carpeta temporal y los archivos destinados al repositorio | Evitar la publicación del video original y eliminar los temporales al finalizar, cancelar o fallar la sesión |
+
+La meta de 14 aciertos en 20 búsquedas fue aceptada como **propuesta de evaluación**, no como resultado obtenido. Cada consulta tendrá un intervalo de referencia marcado antes de ejecutar el sistema. Habrá acierto si al menos una de las primeras cinco marcas de tiempo cae en un intervalo que el equipo haya considerado válido para esa consulta.
+
+La proporción se calculará como `consultas con acierto / 20`. Se conservará un registro de consultas, intervalos y resultados para revisar errores. Los ensayos manuales y asistidos se realizarán en condiciones comparables y se alternará su orden para reducir el efecto de recordar la escena. El tiempo de preparación del fragmento se registrará aparte. No se fija todavía un límite de segundos porque falta medir el entorno real.
 
 ## Impacto ético
 
