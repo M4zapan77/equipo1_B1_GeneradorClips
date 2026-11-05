@@ -31,14 +31,6 @@ Aunque el problema incluye grabaciones largas, la primera versión procesará **
 
 ## Cómo se resuelve hoy
 
-Alternativas reales utilizadas actualmente
-
-| Solución o alternativa | Qué ofrece | Limitaciones para este caso de uso |
-| --- | --- | --- | --- |
-| Revisión manual en línea de tiempo | Control absoluto fotograma a fotograma para encontrar momentos destacados de la partida. | Es extremadamente tardado y tedioso |
-| Capítulos automáticos nativos | Segmentación automática basada en silencios o metadatos generales de la plataforma. | No entiende el contexto visual del juego |
-| Herramientas de transcripción de voz (Speech-to-Text) | Búsqueda por palabras clave dichas por el creador en el audio del video. | Falla si el streamer pasa varios minutos concentrado sin hablar o si el momento clave solo tiene efectos de sonido y música. |
-
 ## Por qué con IA y por qué este modelo
 
 Las alternativas actuales buscan por tiempo, por metadatos o por audio, pero ninguna entiende lo que se ve en pantalla. Un modelo como CLIP relaciona texto con imágenes, así que puede encontrar un fotograma a partir de una descripción, aunque el creador no estuviera hablando en ese momento.
