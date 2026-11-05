@@ -67,18 +67,22 @@ La proporción se calculará como `consultas con acierto / 20`. Se conservará u
 
 ## Impacto ético
 
-Analizar los siguientes aspectos, aplicándolos al caso de ClipQuest y respaldando con fuentes las afirmaciones sobre el modelo o la infraestructura:
+**Privacidad y permisos.** Las grabaciones pueden contener conversaciones, nombres de usuario y otros elementos que identifiquen a personas. Se utilizarán archivos propios o autorizados; los ejemplos publicados deberán omitir o cubrir datos sensibles. Subir el video a Colab implica procesarlo en un servicio externo, por lo que esa condición deberá comunicarse al usuario. Los videos originales no formarán parte del repositorio público.
 
-- **Privacidad y permisos:** consentimiento para utilizar las grabaciones, conversaciones, nombres de usuario y otros datos visibles; conservación y eliminación de archivos.
-- **Sesgos y límites del modelo:** elementos visuales o situaciones que CLIP podría representar peor y cómo se evaluarán en Fortnite.
-- **Personas afectadas y responsabilidad:** consecuencias de un resultado equivocado, quién revisará las sugerencias y quién responderá por la publicación de un clip.
-- **Costo energético:** relación entre la ejecución en Colab con GPU, la duración del procesamiento, el número de fotogramas y los recursos utilizados. Separar las estimaciones de las mediciones que se obtengan durante las pruebas.
+**Sesgos y límites.** El desempeño puede variar según los escenarios, personajes, iluminación, interfaz o forma de describir la escena. La Model Card de CLIP advierte que sus resultados dependen de las categorías y del contexto de evaluación [3]. El equipo probará consultas variadas y documentará fallos. Una limitación lingüística o visual no se atribuirá automáticamente a un error del creador.
 
-| Riesgo | A quién podría afectar | Mitigación propuesta | Responsable | Cómo verificar la medida |
+**Consecuencias y responsabilidad.** Una sugerencia equivocada puede hacer perder tiempo o llevar al creador a seleccionar un fragmento distinto al deseado. El sistema mostrará los candidatos para revisión y no publicará automáticamente. El equipo será responsable de documentar límites y corregir fallos del prototipo; el creador conservará la responsabilidad de revisar el contenido y los permisos antes de compartirlo.
+
+**Infraestructura y costo energético.** Colab con GPU es el entorno inicial propuesto, pero sus recursos no son ilimitados ni están garantizados [7]. Se registrarán el dispositivo utilizado, los minutos de procesamiento, la cantidad de fotogramas y las repeticiones. Con una potencia media estimada o medida, la energía puede expresarse como `E (kWh) = P_media (W) × tiempo (h) / 1000`. La estimación deberá indicar qué componentes incluye y no presentarse como una medición del centro de datos completo.
+
+No se afirmará una huella de carbono sin información sobre energía y factores de emisión. Para limitar trabajo innecesario se reutilizarán los resultados del procesamiento de un mismo fragmento durante la sesión y se evitará repetir búsquedas idénticas sin propósito de evaluación.
+
+| Riesgo | Personas afectadas | Mitigación prevista | Responsable | Verificación |
 | --- | --- | --- | --- | --- |
-| | | | | |
-| | | | | |
-| | | | | |
+| Exposición de conversaciones o identificadores | Creador y personas presentes en el video | Usar material autorizado, ocultar datos y mantener originales fuera del repositorio | Usuario y equipo de desarrollo | Revisar los ejemplos publicados y la lista de archivos que se compartirán |
+| Resultados visuales poco relevantes | Creador | Mostrar candidatos, permitir revisión y registrar errores por tipo de consulta | Equipo de desarrollo y usuario | Conservar consultas y resultados de la evaluación |
+| Conservación innecesaria de archivos | Personas identificables en las grabaciones | Eliminar temporales en finalización, cancelación y error | Equipo de desarrollo | Comprobar los tres escenarios durante las pruebas |
+| Procesamiento repetido y consumo evitable | Equipo e infraestructura utilizada | Registrar ejecuciones y reutilizar el procesamiento de un fragmento durante la sesión | Equipo de desarrollo | Revisar tiempos, dispositivo y número de ejecuciones |
 
 ## Referencias
 
